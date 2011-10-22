@@ -18,7 +18,7 @@ public:
 	static const int COLS=12;
 	static const int ROWS=6;
     static const float RADIUS;// = 90;//[mm]
-    static const float WARP_LENGTH = 100;//[mm]
+    static const float WARP_LENGTH;// = 100;//[mm]
 private:
 	std::vector<ofxKyonyuJoint> m_JointList;
 	std::vector<ofxKyonyuPointPointer> m_PointList;

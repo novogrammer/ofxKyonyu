@@ -9,6 +9,7 @@
 #include "ofxKyonyuOp.h"
 
 const float ofxKyonyuOp::RADIUS = 90;//[mm]
+const float ofxKyonyuOp::WARP_LENGTH = 100;//[mm]
 
 
 void ofxKyonyuOp::update(float inDt)
@@ -248,7 +249,7 @@ void ofxKyonyuOp::touch(const ofxVec3f& inPosition,float inRadius)
         ofxKyonyuPointPointer p=m_PointList[i];
         if(!(p->m_IsPinned || p->m_IsDragging))
         {
-            closest=std::max(closest,(p->m_Position-inPosition).length());
+            closest=MAX(closest,(p->m_Position-inPosition).length());
             if((p->m_Position-inPosition).length()<inRadius)
             {
 #if 0
