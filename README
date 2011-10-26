@@ -9,6 +9,11 @@ ofxOpenNIを使って巨乳を出せるライブラリです。
 
 ofxKyonyuExampleの動かし方メモ:
 
+大まかな流れ
+・ofxOpenNIのサンプルが動く環境を作る
+・ofxKyonyuExampleを同様に導入する
+
+
 必要なライブラリ
 ・openFrameworks v0.062
 ・boost
@@ -16,8 +21,11 @@ ofxKyonyuExampleの動かし方メモ:
 追加するaddon
 ・ofxKyonyu
 ・ofxVectorMath
-・ofxOpenNI
-  ☆macの場合はbinフォルダに指定されたフォルダをコピーする必要あり
+・(gameoverhack's)ofxOpenNI
+  https://github.com/gameoverhack/ofxOpenNI
+  ☆macの場合はbin/data/openniフォルダにlibとconfigをコピーする必要あり
+  ・mac/copy_to_data_openni_path/lib
+  ・example/bin/data/openni/config
 
 
 License:
