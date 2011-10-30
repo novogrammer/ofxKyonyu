@@ -8,7 +8,6 @@
  *
  */
 #include "ofxKyonyuPoint.h"
-#include<cassert>
 struct ofxKyonyuJoint
 {
 	ofxKyonyuPoint* m_Point;
@@ -23,17 +22,24 @@ struct ofxKyonyuJoint
 	,m_Damper(0.01f)
 	,m_NaturalLength(0.0f)
 	{
-        assert(inPoint&&inTarget);//EXPECT NOT NULL
 		resetNaturalLength();
 	}
 	
     void resetNaturalLength()
     {
+        if(!(m_Point && m_Target))
+        {
+            return;
+        }
         m_NaturalLength = m_Point->m_Position.distance(m_Target->m_Position);
         //trace( _point.name+ " " +_target.name +" length:"+ _naturalLength);
     }
     void updateForce()
     {
+        if(!(m_Point && m_Target))
+        {
+            return;
+        }
         //バネの力
 		ofxVec3f dx=(m_Target->m_Position)-(m_Point->m_Position);
 		ofxVec3f nx=dx.getNormalized();//単位ベクトル
