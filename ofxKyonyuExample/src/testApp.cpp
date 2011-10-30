@@ -1,8 +1,6 @@
 #include "testApp.h"
 #include "ofxMatrix4x4.h"
 #include "ofxMatrix3x3.h"
-#include<boost/bind.hpp>
-#include<boost/mem_fn.hpp>
 
 #define KANSETSU (150)
 

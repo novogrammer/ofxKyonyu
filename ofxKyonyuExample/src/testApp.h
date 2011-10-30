@@ -7,7 +7,6 @@
 #include "ofxKyonyuPairOp.h"
 #include "ofSoundPlayer.h"
 
-#include<boost/array.hpp>
 #include<map>
 //#define ENABLE_DEBUG_RING
 
@@ -49,7 +48,7 @@ private:
 	float m_FilterFactor;
 	float m_Fovy;
 	float m_RotY;
-    boost::array<ofxKyonyuPairOp,MAX_NUMBER_USERS> m_OpList;
+    ofxKyonyuPairOp m_OpList[MAX_NUMBER_USERS];
     
     std::map<XnUserID,std::pair<GLuint,GLuint> > m_OpTextureMap;
     ofSoundPlayer m_SoundPlayerTada;

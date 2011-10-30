@@ -8,20 +8,22 @@
  *
  */
 #include "ofxKyonyuPoint.h"
+#include<cassert>
 struct ofxKyonyuJoint
 {
-	ofxKyonyuPointPointer m_Point;
-	ofxKyonyuPointPointer m_Target;
+	ofxKyonyuPoint* m_Point;
+	ofxKyonyuPoint* m_Target;
     float m_Spring;//[N/mm]
     float m_Damper;//[N/(mm/s)]
     float m_NaturalLength;
-	ofxKyonyuJoint(ofxKyonyuPointPointer inPoint=ofxKyonyuPointPointer(new ofxKyonyuPoint()),ofxKyonyuPointPointer inTarget=ofxKyonyuPointPointer(new ofxKyonyuPoint()))
+	ofxKyonyuJoint(ofxKyonyuPoint* inPoint=NULL,ofxKyonyuPoint* inTarget=NULL)
 	:m_Point(inPoint)
 	,m_Target(inTarget)
 	,m_Spring(10.0f)
 	,m_Damper(0.01f)
 	,m_NaturalLength(0.0f)
 	{
+        assert(inPoint&&inTarget);//EXPECT NOT NULL
 		resetNaturalLength();
 	}
 	

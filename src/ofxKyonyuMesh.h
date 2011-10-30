@@ -1,3 +1,4 @@
+#pragma once
 /*
  *  ofxKyonyuMesh.h
  *  HelloGlut
@@ -7,7 +8,6 @@
  *
  */
 #include <vector>
-#pragma once
 #include "ofxVec3f.h"
 #include "ofxVec2f.h"
 

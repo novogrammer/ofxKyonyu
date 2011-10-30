@@ -6,11 +6,11 @@
 //  Created by のぼ on 11/06/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
-#include<boost/array.hpp>
 #include"ofxKyonyuOp.h"
 class ofxKyonyuPairOp
 {
-    boost::array<ofxKyonyuOp,2> m_OpList;
+    static const int OP_QTY=2;
+    ofxKyonyuOp m_OpList[OP_QTY];
     ofxVec3f m_OpOffsetSide;
     ofxVec3f m_OpOffsetFront;
     ofxMatrix4x4 m_OpRot;

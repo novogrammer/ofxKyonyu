@@ -7,6 +7,7 @@
 //
 
 #include "ofxKyonyuPairOp.h"
+
 void ofxKyonyuPairOp::update(float inDt)
 {
     m_OpList[0].update(inDt);
