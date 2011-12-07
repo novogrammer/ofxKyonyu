@@ -1,0 +1,90 @@
+﻿<Window x:Class="KinectKyonyu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kinect巨乳" Height="528" Width="668">
+    <Grid>
+        <Image Height="480" HorizontalAlignment="Left" Name="video" Stretch="Fill" VerticalAlignment="Top" Width="640" />
+        <Button Content="顔" Height="51" HorizontalAlignment="Left" Margin="286,113,0,0" Name="button1" VerticalAlignment="Top" Width="83" Click="button1_Click" FontSize="24" FontWeight="Bold" Opacity="0.0" />
+        <Button Content="左手" Height="23" HorizontalAlignment="Left" Margin="404,157,0,0" Name="button2" VerticalAlignment="Top" Width="40" Opacity="0.0" />
+        <Button Content="右手" Height="23" HorizontalAlignment="Left" Margin="176,157,0,0" Name="button3" VerticalAlignment="Top" Width="40" Click="button3_Click" Opacity="0.0" />
+        <Button Content="肩" Height="23" HorizontalAlignment="Left" Margin="125,87,0,0" Name="button4" VerticalAlignment="Top" Width="23" Opacity="0.0" />
+        <Button Content="肩" Height="23" HorizontalAlignment="Left" Margin="62,157,0,0" Name="button5" VerticalAlignment="Top" Width="23" Opacity="0.0" />
+        <Button Content="肘" Height="23" HorizontalAlignment="Left" Margin="214,68,0,0" Name="button6" VerticalAlignment="Top" Width="23" Opacity="0.0" />
+        <Button Content="肘" Height="23" HorizontalAlignment="Left" Margin="12,68,0,0" Name="button7" VerticalAlignment="Top" Width="23" Opacity="0.0" />
+        <Button Content="喉笛" Height="23" HorizontalAlignment="Left" Margin="54,96,0,0" Name="button8" VerticalAlignment="Top" Width="31" Opacity="0.0" />
+        <Button Content="急所" Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="button9" VerticalAlignment="Top" Width="23" Opacity="0.0" />
+        <Image Height="150" HorizontalAlignment="Left" Margin="446,0,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="200" />
+        <!--<Label Content="Label" Height="57" HorizontalAlignment="Left" Margin="0,432,0,0" Name="label2" VerticalAlignment="Top" Width="640" Foreground="Yellow" FontSize="24" />-->
+
+        <DockPanel Background="Transparent">
+            <Viewport3D>
+                <Viewport3D.Camera>
+                    <PerspectiveCamera Position="0,0,8" LookDirection="0,0,-1 " UpDirection="0,1,0" />
+                </Viewport3D.Camera>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <Model3DGroup x:Name="personModel1">
+                            <DirectionalLight Color="White" Direction="0,0,-1" />
+                            <AmbientLight Color="White" />
+                            <GeometryModel3D x:Name="oppaiLeftRoot1">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D x:Name="oppaiLeftModel1" />
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <ImageBrush x:Name="materialImageLeft1" Stretch="Fill" />
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                            </GeometryModel3D>
+                            <GeometryModel3D x:Name="oppaiRightRoot1">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D x:Name="oppaiRightModel1" />
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <ImageBrush x:Name="materialImageRight1" Stretch="Fill" />
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                            </GeometryModel3D>
+                            <GeometryModel3D x:Name="oppaiLeftRoot2">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D x:Name="oppaiLeftModel2" />
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <ImageBrush x:Name="materialImageLeft2" Stretch="Fill" />
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                            </GeometryModel3D>
+                            <GeometryModel3D x:Name="oppaiRightRoot2">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D x:Name="oppaiRightModel2" />
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <ImageBrush x:Name="materialImageRight2" Stretch="Fill" />
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                            </GeometryModel3D>
+                        </Model3DGroup>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </Viewport3D>
+        </DockPanel>
+        <Image Height="64" HorizontalAlignment="Left" Margin="12,360,0,0" Name="thumb" Stretch="Fill" VerticalAlignment="Top" Width="64" />
+        <Button Content="左" Height="23" HorizontalAlignment="Left" Margin="471,246,0,0" Name="yureLeft" VerticalAlignment="Top" Width="32" Visibility="Hidden" />
+        <Button Content="右" Height="23" HorizontalAlignment="Left" Margin="471,246,0,0" Name="yureRight" VerticalAlignment="Top" Width="32" Visibility="Hidden" />
+        <Rectangle Height="10" HorizontalAlignment="Left" Margin="0,372,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="200" Fill="Red" Visibility="Hidden" />
+        <Rectangle Fill="Red" Height="10" HorizontalAlignment="Left" Margin="0,392,0,0" Name="rectangle2" Stroke="Black" VerticalAlignment="Top" Width="200" Visibility="Hidden" />
+        <Rectangle Fill="Red" Height="10" HorizontalAlignment="Left" Margin="0,412,0,0" Name="rectangle3" Stroke="Black" VerticalAlignment="Top" Width="200" Visibility="Hidden" />
+    </Grid>
+    
+</Window>
