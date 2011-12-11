@@ -1,0 +1,13 @@
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\bin\Release\HelloKinect.exe
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\bin\Release\HelloKinect.pdb
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\MainWindow.baml
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\MainWindow.g.cs
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\App.g.cs
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\HelloKinect_MarkupCompile.cache
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\HelloKinect.g.resources
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\HelloKinect.Properties.Resources.resources
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\HelloKinect.exe
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Release\HelloKinect.pdb
