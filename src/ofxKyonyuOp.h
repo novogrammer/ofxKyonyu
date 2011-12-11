@@ -18,10 +18,10 @@ public:
 	static const int COLS=12;
 	static const int ROWS=6;
     static const float RADIUS;// = 90;//[mm]
-    static const float WARP_LENGTH = 100;//[mm]
+    static const float WARP_LENGTH;// = 100;//[mm]
 private:
 	std::vector<ofxKyonyuJoint> m_JointList;
-	std::vector<ofxKyonyuPointPointer> m_PointList;
+	std::vector<ofxKyonyuPoint> m_PointList;
 	ofxMatrix4x4 m_PinnedMatrix;
     std::vector<std::pair<ofxVec3f,float> > m_TouchingList;
     bool m_IsTouched;
@@ -48,8 +48,8 @@ private:
         m_TexCoordList.resize(m_PointList.size());
 		for(size_t i=0;i<m_PointList.size();++i)
 		{
-			m_VertexList[i]=m_PointList[i]->m_Position;
-			m_TexCoordList[i]=m_PointList[i]->m_TexCoord;
+			m_VertexList[i]=m_PointList[i].m_Position;
+			m_TexCoordList[i]=m_PointList[i].m_TexCoord;
 		}
 	}
 public:

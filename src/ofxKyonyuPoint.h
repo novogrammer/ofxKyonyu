@@ -8,7 +8,6 @@
  *
  */
 #include<memory>
-#include<boost/shared_ptr.hpp>
 #include"ofxVec3f.h"
 #include"ofxVec2f.h"
 
@@ -57,5 +56,3 @@ struct ofxKyonyuPoint
     }
 	
 };
-typedef boost::shared_ptr<ofxKyonyuPoint> ofxKyonyuPointPointer;
-typedef boost::weak_ptr<ofxKyonyuPoint> ofxKyonyuPointWeakPointer;

@@ -10,12 +10,12 @@
 #include "ofxKyonyuPoint.h"
 struct ofxKyonyuJoint
 {
-	ofxKyonyuPointPointer m_Point;
-	ofxKyonyuPointPointer m_Target;
+	ofxKyonyuPoint* m_Point;
+	ofxKyonyuPoint* m_Target;
     float m_Spring;//[N/mm]
     float m_Damper;//[N/(mm/s)]
     float m_NaturalLength;
-	ofxKyonyuJoint(ofxKyonyuPointPointer inPoint=ofxKyonyuPointPointer(new ofxKyonyuPoint()),ofxKyonyuPointPointer inTarget=ofxKyonyuPointPointer(new ofxKyonyuPoint()))
+	ofxKyonyuJoint(ofxKyonyuPoint* inPoint=NULL,ofxKyonyuPoint* inTarget=NULL)
 	:m_Point(inPoint)
 	,m_Target(inTarget)
 	,m_Spring(10.0f)
@@ -27,11 +27,19 @@ struct ofxKyonyuJoint
 	
     void resetNaturalLength()
     {
+        if(!(m_Point && m_Target))
+        {
+            return;
+        }
         m_NaturalLength = m_Point->m_Position.distance(m_Target->m_Position);
         //trace( _point.name+ " " +_target.name +" length:"+ _naturalLength);
     }
     void updateForce()
     {
+        if(!(m_Point && m_Target))
+        {
+            return;
+        }
         //バネの力
 		ofxVec3f dx=(m_Target->m_Position)-(m_Point->m_Position);
 		ofxVec3f nx=dx.getNormalized();//単位ベクトル
