@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Microsoft.DirectX;
+using Microsoft.DirectX.Direct3D;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        Device device = null;
+        public Form1()
+        {
+            InitializeComponent();
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.Opaque, true);
+            components = new Container();
+            Size = new Size(300, 300);   //サイズ
+            Text = "はじめてのDirect3D";//タイトル
+            InitializeGraphics();
+        }
+        //グラフィックの初期化
+        public void InitializeGraphics()
+        {
+            //パラメータ
+            PresentParameters param = new PresentParameters();
+            param.Windowed = true;                //ウィンドウモード
+            param.SwapEffect = SwapEffect.Discard;//スワップエフェクト
+
+            //デバイス
+            device = new Device(0,                   //アダプタ    =デフォルト 
+                DeviceType.Hardware,                 //デバイス種別=ハード
+                this,                                //描画先
+                CreateFlags.SoftwareVertexProcessing,//ソフトウェア頂点処理
+                param);                              //パラメータ
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            //画面のクリア
+            device.Clear(ClearFlags.Target, Color.White, 1.0f, 0);
+
+            //三角形=TransformedColored(座標変換済位置+色)
+            CustomVertex.TransformedColored[] verts = new CustomVertex.TransformedColored[3];
+            verts[0].Position = new Vector4(Width / 2.0f, 50.0f, 0.5f, 1.0f);
+            verts[0].Color = Color.Red.ToArgb();
+            verts[1].Position = new Vector4(Width - (Width / 5.0f), Height - (Height / 5.0f), 0.5f, 1.0f);
+            verts[1].Color = Color.Green.ToArgb();
+            verts[2].Position = new Vector4(Width / 5.0f, Height - (Height / 5.0f), 0.5f, 1.0f);
+            verts[2].Color = Color.Blue.ToArgb();
+
+            //シーンの開始
+            device.BeginScene();
+
+            //頂点フォーマット=TransformedColored
+            device.VertexFormat = CustomVertex.TransformedColored.Format;
+
+            //三角形の描画
+            device.DrawUserPrimitives(PrimitiveType.TriangleList, 1, verts);
+
+            //シーンの終了
+            device.EndScene();
+
+            //表示
+            device.Present();
+
+            //コントロールの再描画
+            Invalidate();
+        }
+
+    }
+}

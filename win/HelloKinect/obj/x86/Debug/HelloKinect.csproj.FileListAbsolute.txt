@@ -1,0 +1,26 @@
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\bin\Debug\HelloKinect.exe
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\bin\Debug\HelloKinect.pdb
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\MainWindow.baml
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\MainWindow.g.cs
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\App.g.cs
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect_MarkupCompile.cache
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.g.resources
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.Properties.Resources.resources
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.exe
+C:\Users\seri\documents\visual studio 2010\Projects\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.pdb
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.exe
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.pdb
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\bin\Debug\HelloKinect.exe
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\bin\Debug\HelloKinect.pdb
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\MainWindow.baml
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\MainWindow.g.cs
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\App.g.cs
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect_MarkupCompile.cache
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.g.resources
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\HelloKinect.Properties.Resources.resources
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\maripo\Desktop\HelloKinect\HelloKinect\HelloKinect\obj\x86\Debug\GenerateResource.write.1.tlog
